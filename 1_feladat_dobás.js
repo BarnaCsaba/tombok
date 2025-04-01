@@ -22,45 +22,62 @@ for (let i = 0; i < randomok.length; i++) {
         
     }
 }
-console.log("Az átlagnál nagyobb dobások: " + feletti);
+console.log("Az átlagnál nagyobb dobások(" + feletti.length +"db):" + feletti);
 
-let egyesek = 0;
-let kettesek = 0;
-let harmasok = 0;
-let negyesek = 0;
-let otosok = 0;
-let hatosok = 0;
-for (let i = 0; i < randomok.length; i++) 
-    {
-    if (randomok[i] == 1) 
-        {
-            egyesek++;
-        }
-        else if (randomok[i] == 2) 
-        {
-            kettesek++;
-        }
-        else if (randomok[i] == 3) 
-        {
-            harmasok++;
-        }
-        else if (randomok[i] == 4) 
-        {
-            negyesek++;
-        }
-        else if (randomok[i] == 5) 
-        {
-            otosok++;
-        }
-        else if (randomok[i] == 6) 
-        {
-            hatosok++;
-        }
+
+// let egyesek = 0;
+// let kettesek = 0;
+// let harmasok = 0;
+// let negyesek = 0;
+// let otosok = 0;
+// let hatosok = 0;
+// for (let i = 0; i < randomok.length; i++) 
+//     {
+//     if (randomok[i] == 1) 
+//         {
+//             egyesek++;
+//         }
+//         else if (randomok[i] == 2) 
+//         {
+//             kettesek++;
+//         }
+//         else if (randomok[i] == 3) 
+//         {
+//             harmasok++;
+//         }
+//         else if (randomok[i] == 4) 
+//         {
+//             negyesek++;
+//         }
+//         else if (randomok[i] == 5) 
+//         {
+//             otosok++;
+//         }
+//         else if (randomok[i] == 6) 
+//         {
+//             hatosok++;
+//         }
+//     }
+
+//     console.log("Egyes dobások:" + egyesek + " db");
+//     console.log("Kettes dobások:" + kettesek + " db");
+//     console.log("Harmas dobások:" + harmasok + " db");
+//     console.log("Negyes dobások:" + negyesek + " db");
+//     console.log("Otos dobások: " + otosok + " db");
+//     console.log("Hatos dobások:" + hatosok + " db");
+
+    let db2 = 0;
+    for (let i = 1; i < 6; i++) {
+        db = 0;
+        for (let j = 0; j < randomok.length; j++)
+             {
+                if (randomok[j] == i)
+                    {
+                        db++;
+                    }
+
+             }
+             console.log(`${i} dobások: ${db} db`);
     }
 
-    console.log("Egyes dobások:" + egyesek + " db");
-    console.log("Kettes dobások:" + kettesek + " db");
-    console.log("Harmas dobások:" + harmasok + " db");
-    console.log("Negyes dobások:" + negyesek + " db");
-    console.log("Otos dobások: " + otosok + " db");
-    console.log("Hatos dobások:" + hatosok + " db");
+    
