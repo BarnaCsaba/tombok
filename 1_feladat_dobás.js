@@ -73,7 +73,7 @@ console.log("Az átlagnál nagyobb dobások(" + feletti.length +"db):" + feletti
              {
                 if (randomok[j] == i)
                     {
-                        db++;
+                            db++;
                     }
 
              }

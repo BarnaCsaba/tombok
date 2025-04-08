@@ -182,3 +182,14 @@ for (let i = 0; i < randomok.length; i++) {
     }
 }
 console.log("Az átlagnál kisebb dobások(" + alatti.length +"db):" + alatti);
+
+
+let autok = ["Mercedes", "BMW", "Audi", "Volvo", "Renault"];
+
+
+autok.sort();
+console.log(autok)
+
+autok.reverse();
+console.log(autok);
+
